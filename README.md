@@ -7,4 +7,22 @@ Custom HUD Offsets for Minecraft
  * Minecraft 1.8.9
  
 ## 使い方
- * configフォルダにあるコンフィグファイルを書き換えてオフセットを設定できるようになる予定です。
+ * configフォルダにあるコンフィグファイルを書き換えてオフセットを設定できるようになります。
+ 
+ ```
+ # Configuration file
+
+hud {
+    #  [range: -1000 ~ 1000, default: 0]
+    I:BossHud-Offset-X=0
+
+    #  [range: -1000 ~ 1000, default: 0]
+    I:BossHud-Offset-Y=0
+
+    #  [range: -1000 ~ 1000, default: 0]
+    I:TabList-Offset-X=0
+
+    #  [range: -1000 ~ 1000, default: 0]
+    I:TabList-Offset-Y=0
+}
+ ```
