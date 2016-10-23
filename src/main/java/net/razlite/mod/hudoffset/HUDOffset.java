@@ -15,7 +15,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class HUDOffset
 {
     public static final String MODID    = "HUD-Offset";
-    public static final String VERSION  = "1.0.0";
+    public static final String VERSION  = "1.0.1";
 
     /* Offset Configs */
     // スコアボード
@@ -39,9 +39,7 @@ public class HUDOffset
         try
         {
             cfg.load();
-        }
-        catch(Exception e)
-        {
+            
             // スコアボード
 //            scoreboard_x = cfg.getInt("ScoreBoard-Offset-X", "HUD", 0, 0, 0, "");
 //            scoreboard_y = cfg.getInt("ScoreBoard-Offset-Y", "HUD", 0, 0, 0, "");
@@ -53,6 +51,9 @@ public class HUDOffset
             // ボスの体力バー
             bossHealth_x = cfg.getInt("BossHud-Offset-X", "HUD", 0, 0, 0, "");
             bossHealth_y = cfg.getInt("BossHud-Offset-Y", "HUD", 0, 0, 0, "");
+        }
+        catch(Exception e)
+        {
         }
         finally
         {
